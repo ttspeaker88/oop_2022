@@ -12,25 +12,25 @@ public class Kalkulator {
 			System.out.println("Szamologep:");
 			String inString = input.nextLine();
 			String[] strArray = inString.split(" ");
-			int op1 = Integer.parseInt(strArray[0]);
+			double a = Integer.parseInt(strArray[0]);
 			char op = strArray[1].charAt(0);
-			int op2 = Integer.parseInt(strArray[2]);
+			double b = Integer.parseInt(strArray[2]);
 			double eredmeny = 0;
 			boolean ok = true;
 
 			switch (op) {
 			case '+':
-				eredmeny = op1 + op2;
+				eredmeny = a + b;
 				break;
 			case '-':
-				eredmeny = op1 - op2;
+				eredmeny = a - b;
 				break;
 			case '*':
-				eredmeny = op1 * op2;
+				eredmeny = a * b;
 				break;
 			case '/':
-				if (op2 != 0) {
-					eredmeny = op1 / op2;
+				if (b != 0) {
+					eredmeny = a / b;
 					break;
 				} else {
 					System.out.println("0-val nem lehet osztani!");
