@@ -1,0 +1,5 @@
+Tamas;32
+Bela;22
+Erika;18
+Monika;20
+Valaki;33
